@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar__section{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+nav .links a{
+    color: #000; 
+    text-decoration: none; 
+    margin-right: 20px;
+}
+
+nav .btn{
+    background: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%) );
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    cursor: pointer;
+}

@@ -18,19 +18,46 @@ nav{
     width: 100%;
 }
 
-
-
 nav .links a{
     color: #000; 
     text-decoration: none; 
     margin-right: 20px;
 }
 
-nav .btn{
+.btn{
     background: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%) );
     color: #fff; 
     border: none; 
     padding: 10px 20px; 
     border-radius: 50px; 
     cursor: pointer;
+}
+
+#intro__section{
+    background-color: white;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-left: 20px;
+}
+
+.left{
+    width: 50%;
+    padding: 20px;
+}
+
+.left h1{
+    font-size: 50px;
+}
+.left p{
+    font-size: 18px;
+}
+.right{
+    width: 50%;
+    background: url('./images/bg-intro-desktop.svg');
 }

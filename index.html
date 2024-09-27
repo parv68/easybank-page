@@ -9,13 +9,19 @@
 <body>
 
   <!-- Navbar Section -->
-  <section id="navbar__section">
-    <nav>
-      <div class="container">
+<section id="navbar__section">
+  <nav>
+    <div class="container">
       <div class="logo">
         <img src="./images/logo.svg" alt="Easybank Logo">
       </div>
-      <div class="links">
+      <!-- Toggle button for mobile menu -->
+      <div class="toggle-button" id="navbarToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="links" id="navbarLinks">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
@@ -24,8 +30,9 @@
       </div>
       <button class="btn">Request Invite</button>
     </div>
-    </nav>
-  </section>
+  </nav>
+</section>
+
 
   <!-- Intro Section -->
   <section id="intro__section">
@@ -150,5 +157,6 @@
   </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

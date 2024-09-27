@@ -89,6 +89,7 @@ nav .links a {
     text-align: center;
 }
 
+
 #about__section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -109,6 +110,7 @@ nav .links a {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    border-radius: 30px;
 }
 
 .choose-us-card img {
@@ -147,6 +149,7 @@ nav .links a {
     text-align: left;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    border-radius: 30px;
 }
 
 .cards .card img {
@@ -167,7 +170,7 @@ nav .links a {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .left, .right {
@@ -177,6 +180,11 @@ nav .links a {
 
     .right {
         margin-top: 30px;
+        background: url('./images/bg-intro-mobile.svg') bottom no-repeat;
+    }
+    .choose-us-card{
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .cards .card {
@@ -187,21 +195,76 @@ nav .links a {
 
 /* Footer Section */
 footer {
-    background-color: #2d3748;
-    color: white;
+    background-color: #494949;
+    padding: 40px 0;
     text-align: center;
-    padding: 30px 0;
-}
-
-footer p {
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-footer {
+    margin-right: 20px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icons img {
+    margin: 0 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .nav1, .nav2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav1 a, .nav2 a {
     margin-bottom: 10px;
-}
-
-footer a {
-    color: hsl(192, 70%, 51%);
+    color: #333;
     text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+  }
+  
+  .nav1 a:hover, .nav2 a:hover {
+    color: #666;
+  }
+  
+  .footer-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-end button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .footer-end button:hover {
+    background-color: #444;
+  }
+  
+  .footer-end p {
+    margin: 0;
+    color: #666;
+  }
+ 
